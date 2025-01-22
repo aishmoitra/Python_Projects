@@ -15,7 +15,7 @@ To run any of the projects, clone this repository and navigate to the project di
 git clone https://github.com/aishmoitra/Python_Projects
 
 # Navigate to a project folder
-cd aishmoitra/project-name
+cd aishmoitra/project_name
 
 # Run the project
 python game_code.py
