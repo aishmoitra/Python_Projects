@@ -1,4 +1,4 @@
-# My Python Projects Repository
+# Python Projects Repository
 
 This repository contains all the Python projects I’ve developed as part of the Python course I had pursued. 
 
@@ -6,6 +6,7 @@ This repository contains all the Python projects I’ve developed as part of the
 
 1. [Project 1: The Game of BlackJack](https://github.com/aishmoitra/Python_Projects/tree/main/the_game_of_blackjack)
 2. [Project 2: The Snake Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_snake_game)
+3. [Project 3: The Pong Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_pong_game )
 
 ## How to Use
 
