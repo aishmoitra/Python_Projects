@@ -27,7 +27,7 @@ This project is a console-based Blackjack game implemented in Python. The player
 ## File Structure
 
 - **art.py**: Contains the ASCII art logo for the game.
-- **game_code.py**: The main script to run the game and implement the game logic.
+- **main.py**: The main script to run the game and implement the game logic.
 
 ## Controls
 
@@ -39,9 +39,9 @@ This project is a console-based Blackjack game implemented in Python. The player
 
 1. Ensure Python is installed on your system.
 2. Clone this repository or download the files.
-3. Run the `game_code.py` file:
+3. Run the `main.py` file:
    ```bash
-   python game_code.py
+   python main.py
    ```
 4. Follow the prompts in the console to play the game.
 

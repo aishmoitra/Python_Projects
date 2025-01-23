@@ -6,7 +6,8 @@ This repository contains all the Python projects I’ve developed as part of the
 
 1. [Project 1: The Game of BlackJack](https://github.com/aishmoitra/Python_Projects/tree/main/the_game_of_blackjack)
 2. [Project 2: The Snake Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_snake_game)
-3. [Project 3: The Pong Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_pong_game )
+3. [Project 3: The Pong Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_pong_game)
+4. [Project 4: The Turtle Crossing Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_turtle_crossing_game)
 
 ## How to Use
 
@@ -20,7 +21,7 @@ git clone https://github.com/aishmoitra/Python_Projects
 cd aishmoitra/project_name
 
 # Run the project
-python game_code.py
+python main.py
 ```
 
 ## License

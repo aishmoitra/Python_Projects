@@ -19,7 +19,7 @@ This project is a classic Snake Game implemented in Python using the Turtle grap
 
 ## File Structure
 
-- **game_code.py**: The main script to initialize and run the game.
+- **main.py**: The main script to initialize and run the game.
 - **food.py**: Contains the `Food` class to manage food behavior.
 - **scoreboard.py**: Contains the `Scoreboard` class to display and update the player's score.
 - **snake.py**: Contains the `Snake` class to handle the snake's movement and growth.
@@ -36,15 +36,15 @@ This project is a classic Snake Game implemented in Python using the Turtle grap
 
 1. Make sure you have Python installed on your system.
 2. Clone this repository or download the files.
-3. Run the `game_code.py` file:
+3. Run the `main.py` file:
    ```bash
-   python game_code.py
+   python main.py
    ```
 4. Use the arrow keys to control the snake and enjoy the game!
 
 ## Customization
 
-- **Screen Size**: Modify the `screen.setup(width, height)` in `game_code.py` to change the game window size.
+- **Screen Size**: Modify the `screen.setup(width, height)` in `main.py` to change the game window size.
 - **Snake Speed**: Adjust the `time.sleep()` value in the main game loop to increase or decrease the snake's speed.
 - **Food Appearance**: Change the color or size of the food in the `Food` class in `food.py`.
 
