@@ -8,6 +8,7 @@ This repository contains all the Python projects I’ve developed as part of the
 2. [Project 2: The Snake Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_snake_game)
 3. [Project 3: The Pong Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_pong_game)
 4. [Project 4: The Turtle Crossing Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_turtle_crossing_game)
+5. [Project 5: The Indian States Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_indian_states_game)
 
 ## How to Use
 
