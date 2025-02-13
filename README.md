@@ -9,6 +9,7 @@ This repository contains all the Python projects I’ve developed as part of the
 3. [Project 3: The Pong Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_pong_game)
 4. [Project 4: The Turtle Crossing Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_turtle_crossing_game)
 5. [Project 5: The U.S. States Game](https://github.com/aishmoitra/Python_Projects/tree/main/the_us_states_game)
+6. [Project 6: Pomodoro App](https://github.com/aishmoitra/Python_Projects/tree/main/pomodoro_app)
 
 ## How to Use
 
