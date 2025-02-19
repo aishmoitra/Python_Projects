@@ -12,6 +12,7 @@ This repository contains all the Python projects I’ve developed as part of the
 6. [Project 6: Pomodoro App](https://github.com/aishmoitra/Python_Projects/tree/main/pomodoro_app)
 7. [Project 7: Password Manager](https://github.com/aishmoitra/Python_Projects/tree/main/password_manager)
 8. [Project 8: Flashcard App](https://github.com/aishmoitra/Python_Projects/tree/main/flashcard_app)
+9. [Project 9: Stock Trading News Alert using APIs](https://github.com/aishmoitra/Python_Projects/tree/main/stock_news_alert_project)
 
 ## How to Use
 

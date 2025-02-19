@@ -1,4 +1,4 @@
-# Stock Alert Telegram Bot - Documentation
+# Stock Trading News Alert using APIs - Documentation
 
 This project is a simple Telegram bot that sends stock price alerts along with the latest news articles using the NewsAPI and Yahoo Finance. It notifies users when a specific stock’s price changes significantly and provides them with the latest news articles related to that stock.
 
@@ -45,6 +45,14 @@ This project is a simple Telegram bot that sends stock price alerts along with t
 
    - Visit [NewsAPI](https://newsapi.org/) and sign up for an API key.
    - You will receive an API key that allows you to fetch news articles related to any topic.
+
+   **To fetch news from a specific country (e.g., India):**
+   - You can use the `top-headlines` endpoint with the `country` parameter to filter news by country.
+   - Example for India:
+     ```bash
+     https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=YOUR_NEWSAPI_KEY
+     ```
+   - Replace `YOUR_NEWSAPI_KEY` with your actual API key. You can also change the category (e.g., `business`, `technology`) to suit your needs.
 
 ### 4. **Choose Your Stock Symbol**
 
