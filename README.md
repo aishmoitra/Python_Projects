@@ -1,6 +1,6 @@
-# Python Projects Repository
+# Python Projects Portfolio
 
-This repository contains all the Python projects I’ve developed as part of the Python course I had pursued. 
+This repository contains all the Python projects I’ve developed as part of the Python course I had pursued.
 
 ## Table of Contents
 
@@ -13,10 +13,13 @@ This repository contains all the Python projects I’ve developed as part of the
 7. [Project 7: Password Manager](https://github.com/aishmoitra/Python_Projects/tree/main/password_manager)
 8. [Project 8: Flashcard App](https://github.com/aishmoitra/Python_Projects/tree/main/flashcard_app)
 9. [Project 9: Stock Trading News Alert using APIs](https://github.com/aishmoitra/Python_Projects/tree/main/stock_news_alert_project)
+10. [Project 10: Music Time Machine Project](https://github.com/aishmoitra/Python_Projects/tree/main/music_time_machine)
 
 ## How to Use
 
 To run any of the projects, clone this repository and navigate to the project directory. Follow the README instructions in each project folder for specific details on setup and usage.
+
+### Using Command Line
 
 ```bash
 # Clone this repository
@@ -29,7 +32,21 @@ cd aishmoitra/project_name
 python main.py
 ```
 
+### Using PyCharm
+
+1. Open **PyCharm**.
+2. Click on **File > Open** and select the cloned project folder.
+3. Ensure you have the correct Python interpreter set up under **File > Settings > Project: [Project Name] > Python Interpreter**.
+4. Install any required dependencies by running:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Open `main.py` and click the **Run** button or press `Shift + F10`.
+
 ## License
 This repository is licensed under the MIT License - see the [LICENSE](https://github.com/aishmoitra/Python_Projects/tree/main/LICENSE) file for details.
+
 
 
