@@ -1,31 +1,32 @@
-# Stock Trading News Alert using APIs - Documentation
+# Amazon Price Tracker using Telegram Bot - Documentation
 
-This project is a simple Telegram bot that sends stock price alerts along with the latest news articles using the NewsAPI and Yahoo Finance. It notifies users when a specific stock’s price changes significantly and provides them with the latest news articles related to that stock.
+This project is a simple Python script that tracks the price of a product on Amazon and sends a price drop alert via Telegram when the price drops below a specified threshold.
 
 ## Features
 
-- **Stock Price Monitoring**: Monitors a specific stock for significant price changes (e.g., greater than 5%).
-- **Latest News**: Fetches the latest news articles for the stock using the NewsAPI.
-- **Telegram Notifications**: Sends notifications to the user via Telegram, including stock price alerts and news articles.
+- **Price Monitoring**: Tracks the price of a product on Amazon.
+- **Telegram Notifications**: Sends price drop notifications to the user via Telegram.
+- **Price Threshold**: Allows you to set a target price. When the price drops below this threshold, a message is sent to your Telegram.
 
 ## How It Works
 
-1. **Fetch Stock Data**: The bot fetches stock data using the Yahoo Finance library and calculates the percentage change in price between the previous two days.
-2. **Check Price Change**: If the price change is more than 5%, the bot proceeds to fetch the latest news articles for the stock.
-3. **Send Alerts**: The bot sends a message with the stock price alert and the latest news articles to the user via Telegram.
+1. **Fetch Amazon Data**: The script sends a request to Amazon to fetch the page content for a given product URL.
+2. **Parse HTML**: Using BeautifulSoup, the script parses the HTML to extract the product title and price.
+3. **Check Price**: It compares the current price with your predefined target price.
+4. **Send Notification**: If the price is below the target price, it sends a message via Telegram with the product title, price, and link.
 
 ## File Structure
 
-- **main.py**: The main Python script that contains the code to fetch stock data, news, and send messages via Telegram.
-- **requirements.txt**: A file to list the Python dependencies needed to run the code.
+- **main.py**: The main Python script that fetches the price, compares it to the target price, and sends alerts via Telegram.
+- **requirements.txt**: A file to list the Python dependencies needed to run the script.
 
 ## How to Set Up
 
 ### 1. **Create Your Telegram Bot**
 
-   - Open the [Telegram app](https://telegram.org/) and search for the "BotFather".
-   - Start a chat with BotFather, then send `/newbot`.
-   - Follow the instructions to create your bot and get the **bot token**.
+   - Open the [Telegram app](https://telegram.org/) and search for "BotFather".
+   - Start a chat with BotFather and send the command `/newbot`.
+   - Follow the instructions to create your bot and get your **bot token**.
    - Example:
      ```
      Your bot token: 123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
@@ -33,7 +34,7 @@ This project is a simple Telegram bot that sends stock price alerts along with t
 
 ### 2. **Get Your Chat ID**
 
-   - To get your **chat ID**, open the Telegram app and search for the bot **userinfobot**.
+   - Open the Telegram app and search for the bot **userinfobot**.
    - Start a conversation with it, and it will give you your unique chat ID.
    - Alternatively, you can get your chat ID programmatically by using the following URL:
      ```
@@ -41,45 +42,32 @@ This project is a simple Telegram bot that sends stock price alerts along with t
      ```
      Replace `<YourBotToken>` with your bot's token. The response will contain your chat ID.
 
-### 3. **Get Your NewsAPI Key**
-
-   - Visit [NewsAPI](https://newsapi.org/) and sign up for an API key.
-   - You will receive an API key that allows you to fetch news articles related to any topic.
-
-   **To fetch news from a specific country (e.g., India):**
-   - You can use the `top-headlines` endpoint with the `country` parameter to filter news by country.
-   - Example for India:
-     ```bash
-     https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=YOUR_NEWSAPI_KEY
-     ```
-   - Replace `YOUR_NEWSAPI_KEY` with your actual API key. You can also change the category (e.g., `business`, `technology`) to suit your needs.
-
-### 4. **Choose Your Stock Symbol**
-
-   - To fetch stock data for your favorite stock, use Yahoo Finance. The ticker symbol for your stock is typically a unique identifier. For example, the ticker symbol for ITC (Indian Tobacco Company) is `ITC.NS`.
-   - You can find the ticker symbol for your stock by visiting [Yahoo Finance](https://finance.yahoo.com/) and searching for the company.
-
-### 5. **Replace Placeholders in Code**
+### 3. **Replace Placeholders in Code**
 
    Open the `main.py` file and replace the placeholders with your actual values:
 
    ```python
 BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
 CHAT_ID = "YOUR_TELEGRAM_CHAT_ID"
-NEWS_API_KEY = "YOUR_NEWSAPI_KEY"
-STOCK_TICKER_SYMBOL = "YOUR_FAVOURITE_STOCK"
    ```
 
    - Replace `YOUR_TELEGRAM_BOT_TOKEN` with the bot token you obtained from BotFather.
    - Replace `YOUR_TELEGRAM_CHAT_ID` with your chat ID.
-   - Replace `YOUR_NEWSAPI_KEY` with the API key you received from NewsAPI.
-   - Replace `YOUR_FAVOURITE_STOCK` with the ticker symbol of your favorite stock (e.g., `ITC.NS` for ITC).
 
+### 4. **Set the URL and Target Price**
 
-### 6. **Run the Script**
+   In the `main.py` file, set the URL of the Amazon product you want to track, and specify the target price below which you would like to get an alert:
+
+   ```python
+url = "https://www.amazon.in/your-product-url"
+BUY_PRICE = 5000  # Replace this with your target price
+   ```
+
+### 5. **Run the Script**
+
 #### Running from Command Line
 
-1. The script requires a few Python packages to function properly. Install them using the following commands:
+1. The script requires a few Python packages to function properly. Install them using the following command:
 
    ```bash
    pip install -r requirements.txt
@@ -90,12 +78,13 @@ STOCK_TICKER_SYMBOL = "YOUR_FAVOURITE_STOCK"
    ```bash
    python main.py
    ```
+
 #### Running on PyCharm  
 
 1. Open **PyCharm** and ensure it is installed on your system.  
 2. Click on **File > Open** and select the project folder.  
 3. Set up the Python interpreter:  
-   - Go to **File > Settings > Project: stock_news_alert_project > Python Interpreter**  
+   - Go to **File > Settings > Project: amazon_price_tracker > Python Interpreter**  
    - Choose the appropriate Python version.  
 4. Open `main.py` in the editor.  
 5. Click the **Run** button (▶) in the top-right corner or press `Shift + F10` to execute the script.
@@ -134,7 +123,7 @@ Now, Task Scheduler will run your script every day at the specified time.
 
 ## Hosting the Python Script on the Cloud
 
-You can host the Python script on a cloud platform such as [PythonAnywhere](https://www.pythonanywhere.com/), if you prefer doing it online.
+To ensure that the script runs continuously without requiring your local machine, you can host the Python script on a cloud platform such as [PythonAnywhere](https://www.pythonanywhere.com/).
 
 ### **Free and Paid Options**
 
@@ -145,13 +134,13 @@ You can host the Python script on a cloud platform such as [PythonAnywhere](http
    2. **Upload Your Files**: Upload your `main.py` and `requirements.txt` files using the PythonAnywhere file interface.
    3. **Set Up a Virtual Environment**: If needed, set up a virtual environment in PythonAnywhere and install dependencies:
       ```bash
-      pip install yfinance requests
+      pip install requests beautifulsoup4
       ```
    4. **Run the Script**: Use the PythonAnywhere console to run your script:
       ```bash
       python main.py
       ```
-   The script will now run on PythonAnywhere and send you stock alerts via Telegram when the conditions are met.
+   The script will now run on PythonAnywhere and send you price drop alerts via Telegram when the conditions are met.
 
 #### 2. **Paid Hosting (More Flexibility)**:
    PythonAnywhere's paid plans offer additional resources (e.g., longer-running processes, more CPU time), so if you need a more powerful setup, consider upgrading to one of the paid plans.
@@ -160,19 +149,16 @@ You can host the Python script on a cloud platform such as [PythonAnywhere](http
 
 ## Customization
 
-- **Modify Stock Symbol**: Change the `STOCK_TICKER_SYMBOL` to track different stocks.
-- **Adjust Stock Alert Threshold**: Modify the percentage change threshold (currently set to 5%) to trigger alerts.
-- **Customize News**: Change the stock-related query in the `fetch_news()` function to fetch news about a different topic.
-- **Multiple Stocks**: Expand the script to track multiple stocks by looping through a list of tickers.
+- **Modify Target Price**: Change the `BUY_PRICE` to set a new target price.
+- **Track Multiple Products**: Expand the script to track multiple products by adding more URLs and corresponding target prices.
+- **Customize Alerts**: Modify the alert message format to suit your preferences.
 
 ## Dependencies
 
 - Python 3.x
-- yfinance (for stock data)
-- requests (for API requests)
-- Telegram Bot API (for sending messages)
+- requests (for HTTP requests)
+- beautifulsoup4 (for web scraping)
 
 ## License
 
 This project is licensed under the MIT License. Feel free to use and modify it as you wish.
-
