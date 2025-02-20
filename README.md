@@ -47,7 +47,7 @@ python main.py
 5. Open `main.py` and click the **Run** button or press `Shift + F10`.
 
 ## License
-This repository is licensed under the MIT License - see the [LICENSE](https://github.com/aishmoitra/Python_Projects/tree/main/LICENSE) file for details.
+This repository is licensed under the MIT License - see the [LICENSE](https://github.com/aishmoitra/Python_Projects/tree/main/LICENSE.txt) file for details.
 
 
 
