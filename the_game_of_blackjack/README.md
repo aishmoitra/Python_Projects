@@ -35,15 +35,25 @@ This project is a console-based Blackjack game implemented in Python. The player
   - `y` to draw another card.
   - `n` to pass your turn and let the computer play.
 
-## How to Run
+## How to Run  
 
-1. Ensure Python is installed on your system.
-2. Clone this repository or download the files.
-3. Run the `main.py` file:
+### Running from Command Line  
+1. Ensure Python is installed on your system.  
+2. Clone this repository or download the files.  
+3. Open a terminal and navigate to the project directory.  
+4. Run the `main.py` file:  
    ```bash
    python main.py
    ```
-4. Follow the prompts in the console to play the game.
+
+### Running on PyCharm  
+1. Open **PyCharm** and ensure it is installed on your system.  
+2. Click on **File > Open** and select the project folder.  
+3. Set up the Python interpreter:  
+   - Go to **File > Settings > Project: the_game_of_blackjack > Python Interpreter**  
+   - Choose the appropriate Python version.  
+4. Open `main.py` in the editor.  
+5. Click the **Run** button (▶) in the top-right corner or press `Shift + F10` to execute the script.   
 
 ## Customization
 

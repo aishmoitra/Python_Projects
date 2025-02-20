@@ -36,14 +36,23 @@ This project is a classic Pong Game implemented in Python using the Turtle graph
   - `S`: Move paddle down
 
 ## How to Run
-
+### Running from Command Line
 1. Ensure Python is installed on your system.
 2. Clone or download the repository.
 3. Run the `main.py` file:
    ```bash
    python main.py
    ```
-4. Use the controls to move the paddles, hit the ball, and compete with another player.
+   
+### Running on PyCharm  
+1. Open **PyCharm** and ensure it is installed on your system.  
+2. Click on **File > Open** and select the project folder.  
+3. Set up the Python interpreter:  
+   - Go to **File > Settings > Project: the_pong_game > Python Interpreter**  
+   - Choose the appropriate Python version.  
+4. Open `main.py` in the editor.  
+5. Click the **Run** button (▶) in the top-right corner or press `Shift + F10` to execute the script.   
+
 
 ## Customization
 

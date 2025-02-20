@@ -1,4 +1,4 @@
-# Music Time Machine Project - Documentation
+# Billboard to Spotify Playlist Creator - Documentation
 
 This project scrapes the Billboard Hot 100 chart for a given date and creates a private Spotify playlist with those songs.
 
@@ -32,15 +32,7 @@ This project scrapes the Billboard Hot 100 chart for a given date and creates a 
 - Copy your **Client ID** and **Client Secret**.
 - Set the redirect URI to `http://example.com` (or your preferred URI).
 
-### 2. **Install Dependencies**
-
-Run the following command to install required Python packages:
-
-```bash
-  pip install requests beautifulsoup4 spotipy
-```
-
-### 3. **Set Up Authentication**
+### 2. **Set Up Authentication**
 
 Update `main.py` with your Spotify credentials:
 
@@ -55,20 +47,30 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
 
 Replace `YOUR_CLIENT_ID` and `YOUR_CLIENT_SECRET` with your actual credentials.
 
-### 4. **Run the Script**
+### 3. **Run the Script**
 
-Execute the script by running:
+#### Running from Command Line
+1. Run the following command to install required Python packages:
+
+```bash
+  pip install -r requirements.txt
+```
+2. Execute the script by running:
 
 ```bash
   python main.py
 ```
 
-Enter a date when prompted (e.g., `2023-08-15`). The script will then:
-- Fetch the Billboard Hot 100 songs for that date.
-- Search for them on Spotify.
-- Create a new playlist and add the songs.
+#### Running on Pycharm
+1. Open **PyCharm** and ensure it is installed on your system.  
+2. Click on **File > Open** and select the project folder.  
+3. Set up the Python interpreter:  
+   - Go to **File > Settings > Project: billboard_to_spotify_playlist_creator > Python Interpreter**  
+   - Choose the appropriate Python version.  
+4. Open `main.py` in the editor.  
+5. Click the **Run** button (▶) in the top-right corner or press `Shift + F10` to execute the script.
 
-### 5. **View Your Playlist**
+### 4. **View Your Playlist**
 
 Once the script completes, the playlist will be available in your Spotify account under "Your Library."
 

@@ -30,13 +30,22 @@ This project is a Turtle Crossing Game implemented in Python using the Turtle gr
 
 ## How to Run
 
+### Running from Command Line
 1. Make sure you have Python installed on your system.
 2. Clone this repository or download the files.
 3. Run the `main.py` file:
    ```bash
    python main.py
    ```
-4. Use the "Up" arrow key to move the turtle and avoid the cars.
+
+### Running on PyCharm  
+1. Open **PyCharm** and ensure it is installed on your system.  
+2. Click on **File > Open** and select the project folder.  
+3. Set up the Python interpreter:  
+   - Go to **File > Settings > Project: the_turtle_crossing_game > Python Interpreter**  
+   - Choose the appropriate Python version.  
+4. Open `main.py` in the editor.  
+5. Click the **Run** button (▶) in the top-right corner or press `Shift + F10` to execute the script.   
 
 ## Customization
 

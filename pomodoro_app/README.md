@@ -31,6 +31,8 @@ This project is a simple Pomodoro timer implemented in Python using the Tkinter 
 
 ## How to Run
 
+### Running from Command Line
+
 1. Make sure you have Python installed on your system.
 2. Install Tkinter (pre-installed with Python).
 3. Clone this repository or download the files.
@@ -38,6 +40,15 @@ This project is a simple Pomodoro timer implemented in Python using the Tkinter 
    ```bash
    python main.py
    ```
+### Running on PyCharm  
+
+1. Open **PyCharm** and ensure it is installed on your system.  
+2. Click on **File > Open** and select the project folder.  
+3. Set up the Python interpreter:  
+   - Go to **File > Settings > Project: pomodoro_app > Python Interpreter**  
+   - Choose the appropriate Python version.  
+4. Open `main.py` in the editor.  
+5. Click the **Run** button (▶) in the top-right corner or press `Shift + F10` to execute the script.
 
 ## Customization
 

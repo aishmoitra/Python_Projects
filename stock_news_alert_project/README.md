@@ -75,23 +75,30 @@ STOCK_TICKER_SYMBOL = "YOUR_FAVOURITE_STOCK"
    - Replace `YOUR_NEWSAPI_KEY` with the API key you received from NewsAPI.
    - Replace `YOUR_FAVOURITE_STOCK` with the ticker symbol of your favorite stock (e.g., `ITC.NS` for ITC).
 
-### 6. **Install Dependencies**
 
-   The script requires a few Python packages to function properly. Install them using the following commands:
+### 6. **Run the Script**
+#### Running from Command Line
+
+1. The script requires a few Python packages to function properly. Install them using the following commands:
 
    ```bash
-   pip install yfinance requests
+   pip install -r requirements.txt
    ```
 
-### 7. **Run the Script**
-
-   Once the setup is complete, run the `main.py` script:
+2. Once the setup is complete, run the `main.py` script:
 
    ```bash
    python main.py
    ```
+#### Running on PyCharm  
 
-   The script will check the stock price and, if there is a significant change (e.g., > 5%), it will send you a Telegram message with the stock alert and the top news articles related to that stock.
+1. Open **PyCharm** and ensure it is installed on your system.  
+2. Click on **File > Open** and select the project folder.  
+3. Set up the Python interpreter:  
+   - Go to **File > Settings > Project: stock_news_alert_project > Python Interpreter**  
+   - Choose the appropriate Python version.  
+4. Open `main.py` in the editor.  
+5. Click the **Run** button (▶) in the top-right corner or press `Shift + F10` to execute the script.
 
 ## Hosting the Python Script on the Cloud
 
