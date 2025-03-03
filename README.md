@@ -15,6 +15,7 @@ This repository contains all the Python projects I’ve developed as part of the
 9. [Project 9: Stock Trading News Alert using APIs](https://github.com/aishmoitra/Python_Projects/tree/main/stock_news_alert_project)
 10. [Project 10: Billboard to Spotify Playlist Creator](https://github.com/aishmoitra/Python_Projects/tree/main/billboard_to_spotify_playlist_creator)
 11. [Project 11: Amazon Price Tracker using Telegram Bot](https://github.com/aishmoitra/Python_Projects/tree/main/amazon_price_tracker)
+12. [Project 12: LinkedIn Job Application Auto-Apply Bot](https://github.com/aishmoitra/Python_Projects/tree/main/job_automation_bot)
 
 ## How to Use
 
