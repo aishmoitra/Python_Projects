@@ -9,6 +9,7 @@ ACCOUNT_EMAIL = "YOUR LOGIN EMAIL"
 ACCOUNT_PASSWORD = "YOUR LOGIN PASSWORD"
 PHONE = "YOUR PHONE NUMBER"
 
+
 def abort_application():
     # Click Close Button
     close_button = driver.find_element(by=By.CLASS_NAME, value="artdeco-modal__dismiss")
@@ -18,6 +19,7 @@ def abort_application():
     # Click Discard Button
     discard_button = driver.find_elements(by=By.CLASS_NAME, value="artdeco-modal__confirm-dialog-btn")[1]
     discard_button.click()
+
 
 chrome_driver_path = "YOUR CHROME DRIVER PATH"
 
@@ -32,8 +34,8 @@ chrome_options.add_experimental_option("detach", True)
 service = ChromeService(executable_path=chrome_driver_path)
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-driver.get("https://www.linkedin.com/jobs/search/?currentJobId=3586148395&f_LF=f_AL&geoId=101356765&"
-           "keywords=python&location=London%2C%20England%2C%20United%20Kingdom&refresh=true")
+# Replace the link with your own link that has the desired job title and location
+driver.get("YOUR_LINKEDIN_JOB_LINK")
 
 # Click Reject Cookies Button
 time.sleep(2)
